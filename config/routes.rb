@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'careers', to: 'pages/careers', as :careers
-  get 'our_team', to: 'pages/our_team', as :our_team
+  get 'careers', to: 'pages#careers', as: :careers
+  get 'our_team', to: 'pages#our_team', as: :our_team
   get 'about', to: 'pages#about', as: :about
   get 'contact', to: 'pages#contact', as: :contact
   root to: 'pages#home'
